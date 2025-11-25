@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二页</title>
+    <link rel="stylesheet" href="style.css"> <!-- 复用CSS样式 -->
+</head>
+<body>
+    <div class="container">
+        <h1>这是第二页</h1>
+        <div class="img-box">
+            <img src="https://picsum.photos/800/500?random=50" alt="第二页图片">
+        </div>
+        <button id="go-back">返回首页</button>
+    </div>
+
+    <script>
+        // 返回首页功能
+        document.getElementById('go-back').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
